@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/btn_border"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_img"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="10dp"
+            app:civ_circle_background_color="#FFF"
+            android:src="@drawable/screenlogo"
+            app:civ_fill_color="#FFFFFF" />
+
+        <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BALARAM SAHOO"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:id="@+id/account_uniqueId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:text="bsbalrams97@gmail.com"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/user_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Keonjhar, Odisha"
+                    android:maxLines="3"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:textSize="15dp" />
+
+        </LinearLayout>
+
+</LinearLayout>

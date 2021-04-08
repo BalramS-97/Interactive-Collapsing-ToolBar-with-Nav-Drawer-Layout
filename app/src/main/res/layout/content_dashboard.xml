@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfc"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_border">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_tBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorPrimary"
+            app:title="WELCOME USER ! !"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/btn_border">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/screenlogo"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#FCFC"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin">
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_refer"
+        android:backgroundTint="@color/white"
+        android:tint="@color/white"
+        app:layout_anchor="@id/appBar"
+        app:layout_anchorGravity="bottom|center|center_horizontal"
+        android:layout_marginEnd="20dp"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+        <GridLayout
+            android:columnCount="2"
+            android:rowCount="4"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@color/white"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="6dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="-3dp"
+                android:layout_marginBottom="10dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                >
+
+                <LinearLayout
+                    android:id="@+id/time_table"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_refer" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Academics"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:layout_marginTop="12dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="6dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                >
+
+                <LinearLayout
+                    android:id="@+id/regd"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_refer" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Registration"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:layout_marginTop="12dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="-3dp"
+                android:layout_marginBottom="10dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                >
+
+                <LinearLayout
+                    android:id="@+id/placement"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_refer"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placement"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:layout_marginTop="12dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                >
+
+                <LinearLayout
+                    android:id="@+id/marks"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_refer" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marks"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:layout_marginTop="12dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="-3dp"
+                android:layout_marginBottom="10dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                >
+
+                <LinearLayout
+                    android:id="@+id/leave"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_refer"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Leave"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:layout_marginTop="12dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                >
+
+                <LinearLayout
+                    android:id="@+id/attendence"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_refer"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attendence"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:layout_marginTop="12dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_shop_C"
+            android:icon="@drawable/ic_refer"
+            app:showAsAction="always"
+            android:title="Shop By Category"
+            tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/action_Refer_Earn"
+        android:icon="@drawable/ic_refer"
+        android:title="Refer and Earn"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/action_Emer"
+        android:icon="@drawable/ic_refer"
+        android:title="Emergency"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle" />
+    </group>
+
+    <item android:title="MEDICINES"
+        android:checked="true">
+        <menu>
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/right_icon"
+        android:icon="@drawable/ic_refer"
+        app:showAsAction="always"
+        android:title="Find Substitutes"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/action_Videoss"
+        android:icon="@drawable/ic_refer"
+        android:title="Order With Prescription"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/s"
+        android:icon="@drawable/ic_refer"
+        app:showAsAction="always"
+        android:title="Pill Remainder"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/aa"
+        android:icon="@drawable/ic_refer"
+        android:title="My Health Records"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle" />
+    </group>
+        </menu>
+    </item>
+</menu>
